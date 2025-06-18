@@ -85,3 +85,13 @@ Día 18, hoy polito rojo de ferrari, totalmente desatado.
 - O francés, o no se igual se lo está inventando es posible
 - Son las 11 30 y hemos hecho recap de lo que hicimos con el otro proyecto, hacer las factorias, hacer de nuevo lo del map para poder tener las clases gnericas y poder tener htmls genericos para todas las entidades
 - Nos ha mandado hacer digamos rellenar las factorias de distintas entidades en base a las 2 que hemos hecho en clase para poder ver por pantalla tablas de mas entidades, repetir el codigo de la factoria para interiorizar un poco
+- Nos ha dado un script de sql con las tablas modificadas suyas de ayer, esta en su repo y yo tambien lo he guardado por si acaso
+- El resumen de estas 4h han sido esa son justo las 13.00, hemos hecho de nuevo todo el proceso de factoría, html y controladores genericos como repaso y nos ha mandado a replicar durante un rato
+- Ahora esta corrigiendo el y haciendolo
+- Joder te echo bastante de menos, pienso un montón en tí, ojalá poder quitarte solo una porción del dolor que llevas.
+- Ahora estamos editando el html de vistas, hemos puesto un boton que pulsaremos para abrir digamos las tablas de oficinas
+- Es un poco juguetear con el html y los datos no estamos dando contenido nuevo como tal
+- Quiere hacer un acordeon con cada fila de Oficinas, algo parecido a lo que hicimos nosotros con pedidos y productos pero con oficinas y empleados
+- Por cierto al final el DTO que hemos hecho al principio de la clase no lo hemos utilizado, me acabo de dar cuenta
+- Osea que el minimapper tampoco se usa
+- Peleas con html front

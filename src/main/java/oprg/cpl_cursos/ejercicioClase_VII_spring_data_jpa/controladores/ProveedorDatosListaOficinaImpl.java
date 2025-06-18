@@ -42,6 +42,6 @@ public class ProveedorDatosListaOficinaImpl implements IProveedorDatosLista {
 
     @Override
     public String getNombreEntidad() {
-        return "oficina";
+        return "oficinas";
     }
 }

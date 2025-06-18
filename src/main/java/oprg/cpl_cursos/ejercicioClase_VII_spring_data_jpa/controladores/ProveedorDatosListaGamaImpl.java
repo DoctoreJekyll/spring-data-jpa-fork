@@ -42,6 +42,6 @@ public class ProveedorDatosListaGamaImpl implements IProveedorDatosLista{
 
     @Override
     public String getNombreEntidad() {
-        return "Gama";
+        return "gamas";
     }
 }
