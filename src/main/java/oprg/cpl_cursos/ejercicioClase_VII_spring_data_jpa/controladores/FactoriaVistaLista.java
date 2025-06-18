@@ -11,15 +11,15 @@ import java.util.stream.Collectors;
 @Component
 public class FactoriaVistaLista {
     // Esta variable contiene el proveedor de datos -tipo ProveedorLista***Impl- para la vista de lista
-    private final Map<String, ProveedorDatosLista> mapProveedorLista;
+    private final Map<String, IProveedorDatosLista> mapProveedorLista;
 
-    public FactoriaVistaLista(List<ProveedorDatosLista> proveedorDatosParaLista) {
+    public FactoriaVistaLista(List<IProveedorDatosLista> proveedorDatosParaLista) {
         // Creamos un mapa donde la clave es el nombre de la entidad y el valor es el proveedor.
         this.mapProveedorLista = proveedorDatosParaLista.stream()
-                .collect(Collectors.toMap(ProveedorDatosLista::getNombreEntidad, Function.identity()));
+                .collect(Collectors.toMap(IProveedorDatosLista::getNombreEntidad, Function.identity()));
     }
 
-    public Optional<ProveedorDatosLista> getProveedorDatosLista(String nombreEntidad) {
+    public Optional<IProveedorDatosLista> getProveedorDatosLista(String nombreEntidad) {
         return Optional.ofNullable(mapProveedorLista.get(nombreEntidad));
     }
 }

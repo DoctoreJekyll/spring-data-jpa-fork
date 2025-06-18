@@ -1,6 +1,5 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.controladores;
 
-import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades.Cliente;
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades.Oficina;
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.servicios.OficinaSrvc;
 import org.springframework.stereotype.Component;
@@ -10,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-public class ProveedorDatosListaOficinaImpl implements ProveedorDatosLista {
+public class ProveedorDatosListaOficinaImpl implements IProveedorDatosLista {
     private final OficinaSrvc ofiSrvc;
 
     public ProveedorDatosListaOficinaImpl(OficinaSrvc oficinaSrvc) {

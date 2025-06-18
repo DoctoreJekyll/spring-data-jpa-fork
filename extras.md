@@ -81,4 +81,7 @@ Día 18, hoy polito rojo de ferrari, totalmente desatado.
 - En nuestro servicio hemos hecho un minimapper para recibir un cliente y devolver un DTO y poder usarlo, esto ha dicho que podemos hacerlo de muchas formas, sacar el mapper fuera o mapstruct tal tal
 - Todo esto lo hacemos como hemos solido hacer porque modelo de negocio solo queremos que nuestra vista devuelva en este caso el nombre, codigo postal ciudad y un par de cosas mas
 - Ahora hemos hecho, cosa de la factoria, otra clase para implementar el servicio en la factoria
-- 
+- Hay una señora de fondo que habla en un idioma desconocido, creo que es catalán.
+- O francés, o no se igual se lo está inventando es posible
+- Son las 11 30 y hemos hecho recap de lo que hicimos con el otro proyecto, hacer las factorias, hacer de nuevo lo del map para poder tener las clases gnericas y poder tener htmls genericos para todas las entidades
+- Nos ha mandado hacer digamos rellenar las factorias de distintas entidades en base a las 2 que hemos hecho en clase para poder ver por pantalla tablas de mas entidades, repetir el codigo de la factoria para interiorizar un poco

@@ -25,7 +25,7 @@ public class ClienteCtrl {
         modelo.addAttribute("titulo", "Lista de Clientes");
 
         modelo.addAttribute("clientes", listaClientes);
-        return "viistaLista";
+        return "vistaLista";
     }
 
 

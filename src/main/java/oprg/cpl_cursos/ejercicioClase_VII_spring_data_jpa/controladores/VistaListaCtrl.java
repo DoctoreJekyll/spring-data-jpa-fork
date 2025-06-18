@@ -20,7 +20,7 @@ public class VistaListaCtrl{
     @GetMapping("/{nombreEntidad}")
     public String listarDatos(@PathVariable String nombreEntidad, Model modelo){
         // Obtenemos los datos a visualizar desde el proveedor de esos datos suministrado por la factoría
-        ProveedorDatosLista proveedor = factoriaVistaLista.getProveedorDatosLista(nombreEntidad)
+        IProveedorDatosLista proveedor = factoriaVistaLista.getProveedorDatosLista(nombreEntidad)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Entidad no encontrada: " + nombreEntidad));
         // Asignamos los datos al modelo
         modelo.addAttribute("titulo", proveedor.getTitulo());

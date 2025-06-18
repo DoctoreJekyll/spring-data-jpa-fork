@@ -1,6 +1,5 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.controladores;
 
-import lombok.RequiredArgsConstructor;
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades.Cliente;
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.servicios.ClienteSrvc;
 import org.springframework.stereotype.Component;
@@ -8,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.*;
 
 @Component
-public class ProveedorDatosListaClienteImpl implements ProveedorDatosLista{
+public class ProveedorDatosListaClienteImpl implements IProveedorDatosLista {
     private final ClienteSrvc clienteSrvc;
 
     public ProveedorDatosListaClienteImpl(ClienteSrvc clienteSrvc) {

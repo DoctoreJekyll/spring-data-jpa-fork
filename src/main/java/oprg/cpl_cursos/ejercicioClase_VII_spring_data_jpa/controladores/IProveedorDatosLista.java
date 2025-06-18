@@ -7,7 +7,7 @@ import java.util.Map;
  * Interfaz para proveedores de datos para la vista de lista genérica.
  * Cada implementación será responsable de una entidad específica.
  */
-public interface ProveedorDatosLista {
+public interface IProveedorDatosLista {
     /**
      * Devuelve el título de la página.
      */
