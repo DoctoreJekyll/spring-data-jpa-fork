@@ -1,4 +1,5 @@
 Día 16. Recap de proyecto spring JPA desde el principio.
+-
 - Hemos instalado JPA Buddy, un helper para JPA.
 - Creamos estructura básica de paquetes, entities, dto., services, repo controllers. Recordatorio crear las carpetas dentro de la
 Carpeta de proyecto, donde está la clase main
@@ -24,6 +25,7 @@ y hemos hecho el html paso a paso con un th each y tal del html, yo lo he hecho 
 
 
 Día 17. Se ha puesto la skin veraniega, creo que está en el pisito de Malaga, ahora lleva polito azul descamisado.
+-
 - Vamos a repasar de primeras como hacer el html este que era generico, el "vistaLista".
 - Cada vez que estamos teniendo entidades con un String como clave primaria, como el caso de las gamas o las oficinas estamos creandole nosotros mismos un ID con un Integer y su @Id y @GeneratedValue
 - Para guardar imagenes, no guardamos dentro de la base, en la base guardamos una URL
@@ -75,6 +77,7 @@ Día 17. Se ha puesto la skin veraniega, creo que está en el pisito de Malaga, 
 
 
 Día 18, hoy polito rojo de ferrari, totalmente desatado.
+-
 - Empezamos de nuevo a repasar el concepto de Factoria y las vistas genericas html
 - Pinta a que tiene un perrochi chico, tipo caniche o yorsai, le pega
 - Hemos ya generado el primer DTO para transportar solo los datos que queremos de la entidad Cliente
@@ -95,3 +98,7 @@ Día 18, hoy polito rojo de ferrari, totalmente desatado.
 - Por cierto al final el DTO que hemos hecho al principio de la clase no lo hemos utilizado, me acabo de dar cuenta
 - Osea que el minimapper tampoco se usa
 - Peleas con html front
+
+Día 20, volvemos con el html, visualizar tablas dentro de tablas.
+-
+- Hoy estamos resolviendo de momento varios conceptos de html
