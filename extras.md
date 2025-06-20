@@ -102,11 +102,14 @@ Día 18, hoy polito rojo de ferrari, totalmente desatado.
 Día 20, volvemos con el html, visualizar tablas dentro de tablas.
 -
 - Hoy estamos resolviendo de momento varios conceptos de html
-- Como exponer listas, th if, th each
+- Como exponer listas, th if, th each, cosas que podemos ir haciendo en realidad con IAs ha sido al final el resumen de esto
 - Vamos a ver distintos conceptos, ahora ha mencionado tema de patrones de diseño y nos ha recomendado esta pagina https://refactoring.guru/es/design-patterns
 - Hemos pasado por encima sobre la importancia de tener o de saber patrones de diseño, da valor y ha recomendado buscar alguna lectura sobre el tema
 - El tema de los html bajo resumen es lo que hemos hablado, realmente conociendo el backend y la parte de programación puedes pasarle tu codigo a la IA y te genera los html faciles.
 - Ahora estamos generando un formulario para Oficinas, pasamos por el servicio y hacemos lo de findbyid para luego en el controlador buscar una oficina y pasarle los valores al formulario para editar
 - Hemos visto que hace exactamente la etiqueta @ModelAttribute, es como que nos ahorra usar el Model porque con esa etiqueta ya el html directamente nos coge el campo
 - Es decir, la variable que pasemos junto al ModelAttribute es como nuestra "patata" que luego vamos a pasarle al html/thymeleaf, tipo th:text patata.nombre y no hemos necesitado hacer el model.addAtribute(patata)
+- Vale pues no, el ModelAttribute no reemplaza nada, solo nos sirve para devolver valores de vuelta, osea nos sirve por ejemplo en el metodo/accion del postmppaing, de vuelta siginifica que seria del html a nuestra base, para enseñar datos de nuestra base al html seria el Model
+- Luego hemos estado un rato repitiendo la asignacion de endpoints para seguire generalizando desde htmls
+- Ahora nos ha mandado un ejercicio, que debajo de los formularios de las oficinas salga una tabla con los empleados de esa oficina que vamos a actualizar
 - 
