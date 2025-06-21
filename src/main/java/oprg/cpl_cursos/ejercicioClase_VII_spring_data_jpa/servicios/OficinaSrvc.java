@@ -21,9 +21,15 @@ public class OficinaSrvc {
         return oficinaRepo.findAll();
     }
 
-    public Optional<Oficina> cargarOficina(String oficinaId) {
-        return oficinaRepo.findById(oficinaId);
+    public Optional<Oficina> cargarOficina(String codigo) {
+        Optional<Oficina> oficina = oficinaRepo.findById(codigo);
+        if (oficina.isPresent()) {
+            Oficina o = oficina.get();
+            o.getEmpleados().size(); // Esto fuerza que Hibernate cargue la colección
+        } // Fuerza la carga de empleados
+        return oficina;
     }
+
 
     public void grabarOficina(Oficina oficina) {
         oficinaRepo.save(oficina);
