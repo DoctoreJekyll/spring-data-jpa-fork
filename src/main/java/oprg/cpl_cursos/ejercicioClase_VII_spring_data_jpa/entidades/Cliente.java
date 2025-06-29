@@ -26,7 +26,7 @@ public class Cliente {
     private String nombreCliente;
 
     @ColumnDefault("NULL")
-    @Column(name = "nombre_contacto", length = 30)
+    @Column(name = "nombre_contacto", length = 30, nullable = true)
     private String nombreContacto;
 
     @ColumnDefault("NULL")
