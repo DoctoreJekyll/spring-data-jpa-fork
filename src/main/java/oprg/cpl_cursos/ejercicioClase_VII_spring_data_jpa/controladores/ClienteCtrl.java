@@ -1,6 +1,5 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.controladores;
 
-import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades.Cliente;
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.servicios.ClienteSrvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

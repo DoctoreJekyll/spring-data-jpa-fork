@@ -12,25 +12,26 @@ import java.util.Objects;
 @Getter
 @Setter
 @Embeddable
-public class PagoId implements Serializable {
-    @Column(name = "codigo_cliente", nullable = false)
-    private Integer codigoCliente;
+public class ProductosGamaId implements Serializable {
+    private static final long serialVersionUID = -5350646199405945021L;
+    @Column(name = "id_gama", nullable = false)
+    private Integer idGama;
 
-    @Column(name = "id_transaccion", nullable = false, length = 50)
-    private String idTransaccion;
+    @Column(name = "id_producto", nullable = false)
+    private Integer idProducto;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        PagoId entity = (PagoId) o;
-        return Objects.equals(this.idTransaccion, entity.idTransaccion) &&
-                Objects.equals(this.codigoCliente, entity.codigoCliente);
+        ProductosGamaId entity = (ProductosGamaId) o;
+        return Objects.equals(this.idGama, entity.idGama) &&
+                Objects.equals(this.idProducto, entity.idProducto);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idTransaccion, codigoCliente);
+        return Objects.hash(idGama, idProducto);
     }
 
 }

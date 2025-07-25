@@ -1,33 +1,28 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Entity
 @Table(name = "lineas_pedidos")
-public class DetallePedido {
-    @SequenceGenerator(name = "detalle_pedido_id_gen", sequenceName = "empleado_codigo_empleado_seq", allocationSize = 1)
+public class LineasPedido {
     @EmbeddedId
-    private DetallePedidoId id;
+    private LineasPedidoId id;
 
-    @MapsId("codigoPedido")
+    @MapsId("idPedido")
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "id_pedido", nullable = false)
-    private Pedido codigoPedido;
+    private Pedido idPedido;
 
-    @MapsId("codigoProducto")
+    @MapsId("idProducto")
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "id_producto", nullable = false)
-    private Producto codigoProducto;
+    private Producto idProducto;
 
     @Column(name = "cantidad", nullable = false)
     private Integer cantidad;

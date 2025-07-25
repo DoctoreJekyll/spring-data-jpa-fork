@@ -1,24 +1,21 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 
+import javax.smartcardio.CardNotPresentException;
 import java.math.BigDecimal;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "clientes")
 public class Cliente {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "codigo_cliente", nullable = false)
     private Integer id;
 
@@ -26,7 +23,7 @@ public class Cliente {
     private String nombreCliente;
 
     @ColumnDefault("NULL")
-    @Column(name = "nombre_contacto", length = 30, nullable = true)
+    @Column(name = "nombre_contacto", length = 30)
     private String nombreContacto;
 
     @ColumnDefault("NULL")
@@ -61,14 +58,18 @@ public class Cliente {
     @Column(name = "codigo_postal", length = 10)
     private String codigoPostal;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "codigo_empleado_rep_ventas")
+    private Empleado codigoEmpleadoRepVentas;
+
     @ColumnDefault("NULL")
     @Column(name = "limite_credito", precision = 15, scale = 2)
     private BigDecimal limiteCredito;
 
-    @ManyToOne
-    @JoinColumn(name = "codigo_empleado_rep_ventas")
-    private Empleado repVentas;
+    @OneToMany(mappedBy = "codigoCliente")
+    private Set<Pago> pagos = new LinkedHashSet<>();
 
-    @OneToMany(mappedBy = "cliente")
-    private Set<Pedido> pedidos;
+    @OneToMany(mappedBy = "codigoCliente")
+    private Set<Pedido> pedidos = new LinkedHashSet<>();
+
 }

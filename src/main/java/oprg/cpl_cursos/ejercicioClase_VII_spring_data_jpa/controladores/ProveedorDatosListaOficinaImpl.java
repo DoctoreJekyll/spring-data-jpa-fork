@@ -1,8 +1,5 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.controladores;
 
-import jakarta.transaction.Transactional;
-import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades.Empleado;
-import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades.Oficina;
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.servicios.OficinaSrvc;
 import org.springframework.stereotype.Component;
 

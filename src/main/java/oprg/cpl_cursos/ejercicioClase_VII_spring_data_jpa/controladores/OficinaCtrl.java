@@ -2,7 +2,6 @@ package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.controladores;
 
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades.Oficina;
 import oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.servicios.OficinaSrvc;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

@@ -1,16 +1,12 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Entity
@@ -18,9 +14,10 @@ import java.util.Set;
 public class Gama {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "gama", unique = true, nullable = false)
+    @Column(name = "gama", nullable = false)
     private String gama;
 
     @Column(name = "descripcion_texto", length = Integer.MAX_VALUE)
@@ -32,7 +29,10 @@ public class Gama {
     @Column(name = "imagen", length = 256)
     private String imagen;
 
-    @ManyToMany(mappedBy ="gamas")
+    @OneToMany(mappedBy = "idGama")
     private Set<Producto> productos = new LinkedHashSet<>();
+
+    @OneToMany(mappedBy = "idGama")
+    private Set<ProductosGama> productosGamas = new LinkedHashSet<>();
 
 }

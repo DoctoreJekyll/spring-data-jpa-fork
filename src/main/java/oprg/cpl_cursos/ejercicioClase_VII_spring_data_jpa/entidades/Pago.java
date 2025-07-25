@@ -1,22 +1,17 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Entity
 @Table(name = "pagos")
 public class Pago {
-    @SequenceGenerator(name = "pago_id_gen", sequenceName = "empleado_codigo_empleado_seq", allocationSize = 1)
     @EmbeddedId
     private PagoId id;
 

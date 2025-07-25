@@ -1,23 +1,20 @@
 package oprg.cpl_cursos.ejercicioClase_VII_spring_data_jpa.entidades;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Entity
 @Table(name = "oficinas")
 public class Oficina {
     @Id
+    @Column(name = "codigo_oficina", nullable = false)
     private String codigoOficina;
 
     @Column(name = "ciudad", nullable = false, length = 30)
@@ -43,7 +40,7 @@ public class Oficina {
     @Column(name = "linea_direccion2", length = 50)
     private String lineaDireccion2;
 
-    @OneToMany(mappedBy = "oficina", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "codigoOficina")
     private Set<Empleado> empleados = new LinkedHashSet<>();
 
 }
